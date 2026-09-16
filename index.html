@@ -1,11 +1,11 @@
-<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="apple-mobile-web-app-capable" content="yes"><title>期货从业 48H 冲刺刷题器</title><link rel="stylesheet" href="style.css"></head><body><div class="wrap">
-  <div class="top"><div class="brand">期货从业 · 48H 冲刺</div><div class="pill">9月19日专场</div></div>
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="apple-mobile-web-app-capable" content="yes"><title>期货从业 48H 高难冲刺刷题器</title><link rel="stylesheet" href="style.css"></head><body><div class="wrap">
+  <div class="top"><div class="brand">期货从业 · 48H 高难冲刺</div><div class="pill">9月19日专场</div></div>
 
   <section id="screen-home">
     <div class="card hero">
-      <div class="kicker">目标：先稳定过线，再冲正确率</div>
-      <h1>别慌。做一题，<br>就多拿一分把握。</h1>
-      <p>自动判分、错题入库、错题回炉。基础知识包含动态计算题，法律法规强化2026年9月新增方向。</p>
+      <div class="kicker">V2 高难版 · 综合题优先</div>
+      <h1>不刷送分题了。<br>直接练会卡分的题。</h1>
+      <p>自动判分、错题入库、错题回炉。基础知识强化套保、基差、套利、股指对冲、期权组合和多步计算；法律法规强化场景多选、程序化交易、互联网营销及2026年9月新增内容。</p>
       <div class="stats">
         <div class="stat"><b id="stat-done">0</b><span>已刷题</span></div>
         <div class="stat"><b id="stat-acc">—</b><span>正确率</span></div>
@@ -17,21 +17,21 @@
     <div class="card notice">
       <b>⏳ 距离 9月19日</b>
       <div id="countdown" style="font-size:22px;font-weight:850;margin:8px 0"></div>
-      <div class="small">单科130题 / 100分钟 / 满分100 / 60分及格。冲刺训练建议把正确率稳定在70%以上。</div>
+      <div class="small">正式考试单科130题 / 100分钟 / 满分100 / 60分及格。高难版训练不建议拿60%直接等同于真实卷60分，重点看薄弱专题和错题。</div>
     </div>
 
     <div class="card">
       <b style="display:block;margin-bottom:12px">选择科目</b>
       <div class="grid">
-        <button type="button" class="mode" data-action="choose" data-subject="基础知识"><b>📈 期货基础知识</b><span>套保 · 套利 · 期权 · 计算</span></button>
-        <button type="button" class="mode" data-action="choose" data-subject="法律法规"><b>⚖️ 法律法规</b><span>第三版教材 · 9月新增</span></button>
+        <button type="button" class="mode" data-action="choose" data-subject="基础知识"><b>📈 期货基础知识 · 高难</b><span>综合计算 · 套保 · 套利 · 期权组合</span></button>
+        <button type="button" class="mode" data-action="choose" data-subject="法律法规"><b>⚖️ 法律法规 · 高难</b><span>场景判断 · 多选陷阱 · 9月新增</span></button>
       </div>
     </div>
 
     <div class="card">
       <b style="display:block;margin-bottom:12px">临考快捷入口</b>
       <div class="grid">
-        <button type="button" class="mode" data-action="special"><b>🔥 9月新增专项</b><span>旧题库最容易漏掉的一块</span></button>
+        <button type="button" class="mode" data-action="special"><b>🔥 9月新增专项</b><span>新版教材和新增考核方向</span></button>
         <button type="button" class="mode" data-action="wrong-review"><b>🧠 错题回炉</b><span>把做错的题重新刷一遍</span></button>
         <button type="button" class="mode" data-action="wrong-list"><b>📒 查看错题本</b><span>看具体哪几题进了错题</span></button>
         <button type="button" class="mode" data-action="reset"><b>↺ 重置进度</b><span>清空答题记录和错题本</span></button>
@@ -43,61 +43,20 @@
     <div class="card">
       <div class="small">当前科目</div><h2 id="mode-title" style="margin:4px 0 16px"></h2>
       <div class="grid">
-        <button type="button" class="mode" data-action="start" data-count="20"><b>⚡ 20题冲刺</b><span>快速热身</span></button>
-        <button type="button" class="mode" data-action="start" data-count="40"><b>🩺 40题诊断</b><span>定位薄弱点</span></button>
-        <button type="button" class="mode" data-action="start" data-count="80"><b>🚀 高频80题</b><span>临考主力</span></button>
-        <button type="button" class="mode" data-action="start" data-count="130"><b>📝 130题模拟</b><span>练正式题量</span></button>
+        <button type="button" class="mode" data-action="start" data-count="20"><b>🔥 高难20题</b><span>直接做综合题和陷阱题</span></button>
+        <button type="button" class="mode" data-action="start" data-count="40"><b>🩺 高难40题诊断</b><span>定位真正薄弱点</span></button>
+        <button type="button" class="mode" data-action="start" data-count="80"><b>🚀 高难80题</b><span>临考主力训练</span></button>
+        <button type="button" class="mode" data-action="start" data-count="130"><b>📝 130题耐力模拟</b><span>练100分钟节奏和稳定性</span></button>
       </div>
       <button type="button" class="btn secondary" style="margin-top:12px" data-action="home">返回首页</button>
     </div>
   </section>
 
-  <section id="screen-quiz" class="hide">
-    <div class="card">
-      <div class="qhead"><div><span id="q-sub" class="tag"></span> <span id="q-topic" class="tag"></span></div><b id="q-index" class="small"></b></div>
-      <div class="progress"><div id="progress-bar" class="bar"></div></div>
-      <div id="q-type" class="small"></div>
-      <div id="q-text" class="question"></div>
-      <div id="options"></div>
-      <div id="explanation" class="hide"></div>
-    </div>
-  </section>
+  <section id="screen-quiz" class="hide"><div class="card"><div class="qhead"><div><span id="q-sub" class="tag"></span> <span id="q-topic" class="tag"></span></div><b id="q-index" class="small"></b></div><div class="progress"><div id="progress-bar" class="bar"></div></div><div id="q-type" class="small"></div><div id="q-text" class="question"></div><div id="options"></div><div id="explanation" class="hide"></div></div></section>
 
-  <section id="screen-result" class="hide">
-    <div class="card">
-      <div class="kicker">本轮完成</div>
-      <h2 id="result-score" style="font-size:30px;margin:4px 0"></h2>
-      <div id="result-msg" class="small"></div>
-      <div class="stats">
-        <div class="stat"><b id="result-c"></b><span>答对</span></div>
-        <div class="stat"><b id="result-w"></b><span>答错</span></div>
-        <div class="stat"><b id="result-a"></b><span>正确率</span></div>
-      </div>
-    </div>
-    <div class="card"><b>薄弱专题</b><div id="weak-list"></div></div>
-    <div class="row">
-      <button type="button" class="btn good" data-action="wrong-review">立即回炉错题</button>
-      <button type="button" class="btn secondary" data-action="home">返回首页</button>
-    </div>
-  </section>
+  <section id="screen-result" class="hide"><div class="card"><div class="kicker">本轮完成</div><h2 id="result-score" style="font-size:30px;margin:4px 0"></h2><div id="result-msg" class="small"></div><div class="stats"><div class="stat"><b id="result-c"></b><span>答对</span></div><div class="stat"><b id="result-w"></b><span>答错</span></div><div class="stat"><b id="result-a"></b><span>正确率</span></div></div></div><div class="card"><b>薄弱专题</b><div id="weak-list"></div></div><div class="row"><button type="button" class="btn good" data-action="wrong-review">立即回炉错题</button><button type="button" class="btn secondary" data-action="home">返回首页</button></div></section>
 
-  <section id="screen-wrongs" class="hide">
-    <div class="card">
-      <div class="kicker">错题本</div>
-      <h2 style="margin:4px 0 6px">具体错了哪些题</h2>
-      <div class="small">做对后会自动从错题本移除。</div>
-      <div id="wrong-list"></div>
-      <div class="row" style="margin-top:14px">
-        <button type="button" class="btn good" data-action="wrong-review">开始回炉</button>
-        <button type="button" class="btn secondary" data-action="home">返回首页</button>
-      </div>
-    </div>
-  </section>
+  <section id="screen-wrongs" class="hide"><div class="card"><div class="kicker">错题本</div><h2 style="margin:4px 0 6px">具体错了哪些题</h2><div class="small">做对后会自动从错题本移除。</div><div id="wrong-list"></div><div class="row" style="margin-top:14px"><button type="button" class="btn good" data-action="wrong-review">开始回炉</button><button type="button" class="btn secondary" data-action="home">返回首页</button></div></div></section>
 </div>
-
-<div id="footer" class="footer hide">
-  <div class="footerin">
-    <button type="button" id="submit-btn" class="btn" data-action="submit">提交答案</button>
-    <button type="button" id="next-btn" class="btn hide" data-action="next">下一题</button>
-  </div>
-</div><script src="questions.js"></script><script src="app.js"></script></body></html>
+<div id="footer" class="footer hide"><div class="footerin"><button type="button" id="submit-btn" class="btn" data-action="submit">提交答案</button><button type="button" id="next-btn" class="btn hide" data-action="next">下一题</button></div></div>
+<script src="questions.js"></script><script src="hard_foundation.js"></script><script src="hard_law.js"></script><script src="app.js"></script></body></html>
